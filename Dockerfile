@@ -1,6 +1,6 @@
 FROM python:3.10.0-bullseye
 RUN apt-get update \
- && apt-get install --no-install-recommends -y libgeos-dev=3.8.0 \
+ && apt-get install --no-install-recommends -y libgeos-dev=3.8.0-1build1 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 COPY requirements.txt requirements.txt
