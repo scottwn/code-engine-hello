@@ -7,10 +7,10 @@ RUN wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCT
  | tee /etc/apt/sources.list.d/oneAPI.list \
  && apt-get update \
  && apt-get --no-install-recommends -y install \
-  cmake \
-  pkg-config \
-  build-essential \
-  intel-basekit \
+  cmake=3.18.4-2 \
+  pkg-config=0.29.2-1 \
+  build-essential=12.9 \
+  intel-basekit=2021.4.0-3422 \
   libgeos-dev=3.9.0-1 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
