@@ -19,7 +19,7 @@ RUN apt-get update \
 
 RUN wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz -P /tmp
 RUN tar -xf tmp/Python-3.10.*.tgz
-WORKDIR tmp/Python-3.10.*/
+WORKDIR /tmp/Python-3.10.*/
 RUN ./configure --enable-optimizations && make -j 16 && make install
 
 WORKDIR /
