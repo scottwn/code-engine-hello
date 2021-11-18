@@ -1,2 +1,2 @@
 Flask>=2
-qiskit-metal>=0.0.4
+git+git://github.com/Qiskit/qiskit-metal.git@metal-cloud # until yehan-main branch is merged
